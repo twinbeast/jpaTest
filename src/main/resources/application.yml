@@ -1,0 +1,29 @@
+
+server.port : 8080
+
+
+## Database ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ejdkdlqlwjs0608)^)*
+    url: jdbc:mysql://ipaddr:3306/test?useUnicode=true&zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&serverTimezone=Asia/Seoul
+
+#JPA ??
+# mysql ??
+  jpa:
+    show_sql : true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        show_sql: true            # ??????? ??? ?? SQL?? ??? ??
+        format_sql: true          # SQL?? ??? ?? ??
+        use_sql_comments: true    # ??? ?? ??
+
+#?? ??
+logging:
+  level:
+    org:
+      hibernate: info
