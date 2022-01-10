@@ -2,7 +2,7 @@
 server.port : 8080
 
 
-## Database ??
+## Database Setting
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -10,19 +10,19 @@ spring:
     password: ejdkdlqlwjs0608)^)*
     url: jdbc:mysql://ipaddr:3306/test?useUnicode=true&zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&serverTimezone=Asia/Seoul
 
-#JPA ??
-# mysql ??
+#JPA Setting
+# Use mysql
   jpa:
     show_sql : true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     properties:
       hibernate:
-        show_sql: true            # ??????? ??? ?? SQL?? ??? ??
-        format_sql: true          # SQL?? ??? ?? ??
-        use_sql_comments: true    # ??? ?? ??
+        show_sql: true            # Print SQL Query
+        format_sql: true          # Show SQL in Format
+        use_sql_comments: true    # Print Debuging Info
 
-#?? ??
+#logging Level Setting
 logging:
   level:
     org:
